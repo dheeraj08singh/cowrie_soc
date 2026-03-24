@@ -42,7 +42,6 @@ cowrie-honeypot-soc-lab/
  │    ├── app.py
  │    └── templates/
  │         └── index.html
- ├── screenshots/
  ├── README.md
  └── .gitignore
 ```
