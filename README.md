@@ -6,7 +6,6 @@ This project demonstrates how a beginner in cybersecurity can build a **Security
 
 The goal was to simulate real-world attack scenarios, capture attacker activity, and visualize logs for analysis — similar to what SOC analysts do in real environments.
 
-
 ## 🎯 Objectives
 
 * Understand how honeypots work in cybersecurity
@@ -15,6 +14,7 @@ The goal was to simulate real-world attack scenarios, capture attacker activity,
 * Build a simple SOC dashboard for visualization
 * Gain hands-on experience in log monitoring and detection
 
+---
 
 ## 🧰 Tools & Technologies Used
 
@@ -23,6 +23,7 @@ The goal was to simulate real-world attack scenarios, capture attacker activity,
 * 🐧 Kali Linux
 * 🍯 Cowrie (Honeypot for capturing attacks)
 
+---
 
 ## 🏗️ Project Architecture
 
@@ -31,29 +32,37 @@ The goal was to simulate real-world attack scenarios, capture attacker activity,
 3. Cowrie logs all activities (IP, commands, login attempts)
 4. Logs are processed and visualized using a custom SOC dashboard
 
+---
 
 ## 📂 Project Structure
 
+```
 cowrie-honeypot-soc-lab/
  ├── soc_dashboard/
  │    ├── app.py
  │    └── templates/
  │         └── index.html
  ├── screenshots/
- ├── logs_sample/
  ├── README.md
  └── .gitignore
+```
+
+---
 
 ## ⚙️ Setup Instructions
 
 ### 1️⃣ Clone Cowrie
 
+```
 git clone https://github.com/cowrie/cowrie
 cd cowrie
+```
 
 ### 2️⃣ Run Cowrie
 
+```
 ./bin/cowrie start
+```
 
 ### 3️⃣ Generate Logs
 
@@ -62,6 +71,7 @@ cd cowrie
 
 ### 4️⃣ Run SOC Dashboard
 
+```
 cd soc_dashboard
 python3 app.py
 ```
@@ -70,8 +80,11 @@ python3 app.py
 
 Open browser:
 
+```
 http://localhost:5000
+```
 
+---
 
 ## 🔍 What I Learned
 
@@ -81,6 +94,7 @@ http://localhost:5000
 * Understanding real-world SOC workflows
 * Handling Git and GitHub for project management
 
+---
 
 ## 🚨 Sample Observations
 
@@ -90,28 +104,22 @@ http://localhost:5000
 * Repeated brute-force patterns
 
 
-## 🚀 Future Improvements
-
-* Integrate with SIEM tools like Wazuh or Splunk
-* Add real-time alerting
-* Improve dashboard UI/UX
-* Add geo-location tracking of attacker IPs
-* Automate log parsing
-
-
 ## 🙋‍♂️ About Me
 
 I am a beginner in cybersecurity transitioning into SOC/Cloud Security.
 This project is part of my hands-on learning journey to gain practical experience.
 
+---
 
 ## ⭐ Conclusion
 
 This project helped me understand how SOC analysts monitor threats, analyze logs, and respond to suspicious activities in real-world environments.
 
+---
 
 ## 📌 Note
 
 Cowrie is an open-source honeypot and is not included in this repository.
 Please follow the setup instructions to install and run it separately.
+
 
